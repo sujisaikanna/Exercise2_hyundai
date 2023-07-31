@@ -1,0 +1,26 @@
+Exercise 2 : Take any mobile app:
+
+=============================================================================
+
+from appium import webdriver
+
+desired_caps = {
+    "platformName": "Android",
+    "platformVersion": "9",
+   
+}
+
+driver = webdriver.Remote("https://redbus.com", desired_caps)
+
+login_button = driver.find_element_by_id("login_button")
+login_button.click()
+
+product = driver.find_element_by_id("product")
+product.click()
+
+add_to_cart_button = driver.find_element_by_id("add_to_cart_button")
+add_to_cart_button.click()
+
+payment_page_button = driver.find_element_by_id("payment_page_button")
+
+
